@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسارك التقني</title>
+    <link rel="icon" href="assets/image/Logo.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="CSS/path.css">
+    <link rel="stylesheet" href="CSS/titel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <!-- ==================Start-Logo Download================== -->
+
+    <div id="preloader">
+        <div class="loader-wrapper">
+            <div class="logo-container">
+                <div class="masarak-logo">
+                    <span class="text-main">مسارك</span>
+                    <span class="text-sub">التقني</span>
+                    <div class="tech-arrow"></div>
+                </div>
+            </div>
+            <div class="loading-text">جاري تحضير مسارك التقني...</div>
+        </div>
+    </div>
+    <!-- ==================End-Logo Download================== -->
+    <!-- ===================Scroll======================== -->
+    <button id="scrollTopBtn">⬆</button>
+    <!-- ===================Scroll======================== -->
+    <!-- Start Header -->
+    <header class="navbar" id="Navbar">
+        <div class="nav-container">
+
+            <!-- لوجو + Toggle -->
+            <div class="logo" id="themeToggle">
+
+                <i id="logoImg" class="fa-solid fa-code"></i>
+                <h3>مسارك التقني</h3>
+                <span id="modeIcon">🌙</span>
+            </div>
+
+            <!-- زرار الموبايل -->
+
+
+            <div class="category_nav" id="menuToggle">
+                <div onclick=Open_Categ_List() class="category_btn">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>Browse Category</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="category_nav_list" id="navLinks">
+
+                    <a href="#لغات البرمجة">لغات البرمجة</a>
+                    <a href="#حدد مسارك البرمجي">حدد مسارك البرمجي</a>
+                    <a href="#تطبيق مشاريع">تطبيق مشاريع</a>
+                    <a href="#خرائط التعلم">خرائط التعلم</a>
+                    <a href="#تحديات برمجية">تحديات برمجية</a>
+                    <a href="#أسئلة المقابلات التقنية">أسئلة المقابلات التقنية</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- اللينكات -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#لغات البرمجة">لغات البرمجة</a></li>
+            <li><a href="#حدد مسارك البرمجي">حدد مسارك البرمجي</a></li>
+            <li><a href="#تطبيق مشاريع">تطبيق مشاريع</a></li>
+            <li><a href="#خرائط التعلم">خرائط التعلم</a></li>
+            <li><a href="#تحديات برمجية">تحديات برمجية</a></li>
+            <li><a href="#أسئلة المقابلات التقنية">أسئلة المقابلات التقنية</a></li>
+        </ul>
+    </header>
+
+
+    <!-- End Header -->
+    <!-- Start Hero -->
+
+    <div class="hero">
+        <div class="content">
+            <div class="floating-bg-container" id="floatingBg">
+            </div>
+            <h1> مسارك التقني</h1>
+
+            <p>
+                هي منصة تعليمية تقوم على تقديم العديد من مسارات تطوير الويب وتعلم البرمجة بصفة عامة
+                بشرح تفصيلي تفاعلي باللغة العربية، وخطط دراسة مع اختبارات وتحديات برمجية لضمان فهم الكود والتطبيق عليه.
+            </p>
+
+            <div class="search-box">
+                <input type="text" placeholder="البحث في الأكاديمية">
+                <button>البحث</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Start waves-container -->
+    <div class="waves-container">
+
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s
+                58 18 88 18 58-18 88-18
+                58 18 88 18v44h-352z">
+                </path>
+            </defs>
+
+            <g class="parallax">
+
+                <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,.25)" />
+
+                <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,.4)" />
+
+                <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,.6)" />
+
+                <use href="#gentle-wave" x="48" y="7" fill="var(--bg)" />
+
+            </g>
+
+        </svg>
+
+    </div>
+    <!-- End waves-container -->
+    <!-- End Hero -->
+    <!-- Start Cs50 -->
+    <main class="container">
+        <section class="cs50-card">
+            <div class="cs50-1">
+                <h3>أساسيات <a>CS50</a> في علوم الحاسوب</h3>
+            </div>
+            <div class="cs50-2">
+                <img src="assets/icon/project-management.png" alt="CS50">
+                <h2>CS50</h2>
+                <p>أساسيات في الحاسوب</p>
+            </div>
+            <div class="cs50-3">
+                <h2>مهم جدا في البداية </h2>
+                <p class="none">دورة الكورس عام الأسبقية، تمنحك المفاهيم الأساسية للبرمجة وعلوم الحاسوب من أفضل الجامعات
+                    العالمية.
+                </p>
+                <a href="https://youtube.com/playlist?list=PLvGNfY-tFUN_1D3D0WAMlWULl3qnEKHEA&si=AaGizSOic1kNYFUE"
+                    target="_blank">
+                    <button class="btn-main">مشاهدة الكورس </button>
+                    <button class="six">مشاهدة </button>
+                </a>
+            </div>
+        </section>
+        <!-- ==================hr======================== -->
+        <div class="fancy-divider">
+            <h2 class="section-title" id="لغات البرمجة">لغات البرمجة</h2>
+        </div>
+        <!-- ==================hr========================= -->
+        <div class="box active" id="one">
+
+            <!-- One Start Course -->
+            <div class="tracks-grid">
+                <!-- ================================Python===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/Python.jpeg" alt="Python">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة Python</h4>
+                    <P class="Tracks ">تعلم لغة البرمجة الشهيرة التي تُستخدم في تطوير التطبيقات والذكاء الاصطناعي.</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs&si=1V2m_urrhGh3YfUY"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================Java================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/java2.jpeg" alt="Java">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة Java</h4>
+                    <P class="Tracks ">تعلم كيف تحول الأكواد الجامدة إلى تصميمات عصرية ومبهرة.</P>
+                    <a href="https://youtube.com/playlist?list=PL1DUmTEdeA6K7rdxKiWJq6JIxTvHalY8f&si=93PLsDW0zfk1v07P"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================JavaScript================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/JS.jpeg" alt="JavaScript">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة JavaScript</h4>
+                    <P class="Tracks ">أضف التفاعل والذكاء لموقعك وانتقل من مجرد مصمم إلى مطور محترف.</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&si=iBDdPuUOlDPKywF9"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================C================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/C.jpeg" alt="C">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة C</h4>
+                    <P class="Tracks ">تعلم لغة الهيكلة الأساسية التي لا يكتمل أي موقع بدونها.</P>
+                    <a href="https://youtube.com/playlist?list=PLxbVBWjVdAEieEfGae9hqwT9TQ90yvehy&si=ZV38CRKg7PuhqXKg"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================C#================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/Cشارب.jpeg" alt="C#">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة C#</h4>
+                    <P class="Tracks ">تعلم كيف تحول الأكواد الجامدة إلى تصميمات عصرية ومبهرة.</P>
+                    <a href="https://youtube.com/playlist?list=PLqPejUavRNTWrbmE7fTvBC1HH-sAmz7c3&si=YUcaHurQyo2U_puo"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================C++================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/C++.jpeg" alt="C++">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة C++</h4>
+                    <P class="Tracks ">أضف التفاعل والذكاء لموقعك وانتقل من مجرد مصمم إلى مطور محترف.</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAwy-rS6WKudwVeb_x63EzgS&si=yQJ-l53C-3jnYFWm"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================Go===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/Go.jpeg" alt="Go">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة Go</h4>
+                    <P class="Tracks ">تعلم لغة البرمجة الحديثة التي تُستخدم في تطوير التطبيقات والخدمات السحابية.</P>
+                    <a href="https://youtube.com/playlist?list=PLD0Vy7NjzXS63cTV76LPnqDttqcIIPrpM&si=X2Y8En4AuMk5K5h1"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================Swift================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/Swift.jpeg" alt="Swift">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة Swift</h4>
+                    <P class="Tracks ">تعلم كيف تحول الأكواد الجامدة إلى تصميمات عصرية ومبهرة.</P>
+                    <a href="https://youtube.com/playlist?list=PLQaOY10EEc8bNbEBMyiJU1I-GIgs1LQfj&si=fL13WYj8q_Ieki8o"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================Dart================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/Dart.jpeg" alt="Dart">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة Dart</h4>
+                    <P class="Tracks ">أضف التفاعل والذكاء لموقعك وانتقل من مجرد مصمم إلى مطور محترف.</P>
+                    <a href="https://youtube.com/playlist?list=PLoP3S2S1qTfCe3hI4f-spGxg2kHOig33Z&si=R0gf0hv5oT8LTUP8"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================Kotlin================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/Kotlin.jpeg" alt="Kotlin">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة Kotlin</h4>
+                    <P class="Tracks ">أضف التفاعل والذكاء لموقعك وانتقل من مجرد مصمم إلى مطور محترف.</P>
+                    <a href="https://youtube.com/playlist?list=PLdqCqcIH93jvjcnF8-TVr7DM3mvkmkJ8K&si=dAcmVXfHxmasWOSJ"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================PHP================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/PHP.jpeg" alt="PHP">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة PHP</h4>
+                    <P class="Tracks ">أضف التفاعل والذكاء لموقعك وانتقل من مجرد مصمم إلى مطور محترف.</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq&si=bgNZq1lxdbygbun7"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================Rust================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="assets/image/Rust.jpeg" alt="Rust">
+                    </div>
+                    <h4 class="Tracks ">كورس لغة Rust</h4>
+                    <P class="Tracks ">أضف التفاعل والذكاء لموقعك وانتقل من مجرد مصمم إلى مطور محترف.</P>
+                    <a href="https://youtube.com/playlist?list=PLjQ2-_RIGIVBPbV2H0ng0N4nuN7DsPkPa&si=N_P2Kx4xyAjLmo-M"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- One End Tracks -->
+    </main>
+    <!-- ==================hr======================== -->
+    <div class="fancy-divider">
+        <h2 class="section-title" id="حدد مسارك البرمجي">حدد مسارك البرمجي</h2>
+    </div>
+    <!-- ==================hr========================= -->
+    <main class="container">
+
+
+        <!-- Start Tracks -->
+        <div class="tracks-grid">
+            <div class="track-card">
+                <div class="track-icon">🎨</div>
+                <h4>  تصميم واجهة وتجربة المستخدم </h4>
+                <a href="pages/UI-UX.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+            <div class="track-card">
+                <div class="track-icon">🖥️</div>
+                <h4> تطوير الواجهات الأمامية </h4>
+                <a href="pages/Front.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">⚙️</div>
+                <h4> تطوير الواجهات الخلفية </h4>
+                <a href="pages/Back.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🌐</div>
+                <h4> تطوير التطبيقات المتكاملة </h4>
+                <a href="pages/full-stack.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">📱</div>
+                <h4>  تطوير تطبيقات الهاتف</h4>
+                <a href="pages/Mobile.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🗄️</div>
+                <h4> قواعد البيانات </h4>
+                <a href="pages/Database.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🔄</div>
+                <h4> ديف أوبس (إدارة وتشغيل الأنظمة)</h4>
+                <a href="pages/DevOps.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+            <div class="track-card">
+                <div class="track-icon">☁️</div>
+                <h4> الحوسبة السحابية </h4>
+                <a href="pages/Cloud Computing.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🛡️</div>
+                <h4> الأمن السيبراني </h4>
+                <a href="pages/Cybersecurity.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">📊 </div>
+                <h4> تحليل البيانات </h4>
+                <a href="pages/Data Analysis.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🤖</div>
+                <h4> الذكاء الاصطناعي وتعلّم الآلة</h4>
+                <a href="pages/AI.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🌍</div>
+                <h4> الشبكات </h4>
+                <a href="pages/Networking.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- End Tracks -->
+    <!-- ==================hr======================== -->
+    <div class="fancy-divider">
+        <h2 class="section-title" id="تطبيق مشاريع">تطبيق مشاريع</h2>
+    </div>
+    <!-- ==================hr========================= -->
+    <main class="container">
+
+
+        <!-- Start Tracks -->
+        <div class="tracks-grid">
+            <div class="track-card">
+                <div class="track-icon">💻</div>
+                <h4> مشاريع فرونت إند</h4>
+                <a href="Front.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🖥️</div>
+                <h4>مشاريع باك إند</h4>
+                <a href="back.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">📱</div>
+                <h4>مشاريع FLUTTER</h4>
+                <a href="Mobile.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🛡️</div>
+                <h4> مشاريع (Cybersecurity)</h4>
+                <a href="Cybersecurity.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+
+            <div class="track-card">
+                <div class="track-icon">🎮</div>
+                <h4> مشاريع (Games)</h4>
+                <a href="Games.html">
+                    <button class="btn-track">عرض المسار</button>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- End Tracks -->
+    <!-- Start Footer -->
+    <div class="footer"> 2026 &copy; Made With Love By <span> Ali Haitham</span> </div>
+    <!-- End Footer -->
+    <script src="JS/path.js"></script>
+</body>
+
+</html>

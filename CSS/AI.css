@@ -1,0 +1,476 @@
+/* الإعدادات العامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal';
+}
+
+body {
+    background-color: #F9FAFB;
+    color: #111827;
+    line-height: 1.6;
+    overflow-y: scroll;
+}
+
+/* ================Scroll======================= */
+
+
+/* عرض السكرول */
+::-webkit-scrollbar {
+    width: 15px;
+    /* عمودي */
+    height: 8px;
+    /* أفقي */
+}
+
+/* الخلفية */
+::-webkit-scrollbar-track {
+    background: #eee;
+    /* لون الخلفية */
+}
+
+/* الجزء اللي بيتحرك */
+::-webkit-scrollbar-thumb {
+    background: #0ea4e9d7;
+    /* لون السكرول */
+    border-radius: 0;
+    /* يخليه زوايا حادة */
+    background: linear-gradient(180deg, #0ea4e9d7, #0EA5E9);
+    min-height: 20px;
+}
+
+/* عند الـ hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0ea4e9d7;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    /* المسافة من تحت */
+    right: 20px;
+    /* مكانه يمين */
+    font-size: 30px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #0EA5E9;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    display: none;
+    /* مخفي في الأول */
+}
+
+#scrollTopBtn:hover {
+    background-color: #0ea4e9d7;
+}
+
+/* ================Scroll======================= */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Start Header */
+.header {
+    padding: 20px;
+    background-color: #333;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    width: 40px;
+    position: absolute;
+    top: 5px;
+}
+
+.Icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Icon h3 {
+    color: white;
+    margin-right: 45px;
+    font-size: 15px;
+}
+
+.header .links {
+    position: relative;
+}
+
+.header .links:hover .icon span:nth-child(2) {
+    width: 100%;
+}
+
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.header .links .icon span {
+    background-color: white;
+    margin-bottom: 5px;
+    height: 2px;
+}
+
+.header .links .icon span:first-child {
+    width: 100%;
+}
+
+.header .links .icon span:nth-child(2) {
+    width: 60%;
+    transition: 0.3s;
+}
+
+.header .links .icon span:last-child {
+    width: 100%;
+}
+
+.header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F6F6F6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+}
+
+.header .links:hover ul {
+    display: block;
+}
+
+.header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+
+.header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+    color: #333;
+}
+
+.header .links ul li a:hover {
+    padding-left: 25px;
+}
+
+.header .links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd
+}
+
+/* End Header */
+/* Start first */
+.image {
+    background-image: url('image/b1f5a046-9f8d-44e2-9565-3e30cdce755e.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(70vh);
+    position: relative;
+    padding: 80px 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.text {
+    color: #333;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text ul li {
+
+    list-style: none;
+}
+
+.icon img {
+    position: absolute;
+    top: 23%;
+    width: 470px;
+}
+
+@media (min-width: 767px) and (max-width: 1020px) {
+    .icon img {
+        width: 400px;
+        position: absolute;
+        top: 33%;
+        left: 2%;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .icon img {
+        width: 350px;
+        position: absolute;
+        top: 37%;
+        left: 1%;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* ====================================== */
+/* Start Cs50 */
+main {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.tabs {
+    margin-bottom: 20px;
+}
+
+.tab {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* hover */
+.tab:hover {
+    background-color: #0EA5E9;
+    color: white;
+}
+
+.tab.active {
+    background-color: #0EA5E9;
+    color: white;
+}
+
+.box {
+    display: none;
+    padding: 20px;
+    background: #0EA5E9;
+    color: white;
+    border-radius: 10px;
+}
+
+.box.active {
+    display: block;
+}
+
+.abc {
+    background: white;
+    height: 80px;
+    border-radius: 50px;
+    padding: 40px;
+    margin-top: -40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.09);
+    border: 1px solid #E5E7EB;
+    position: relative;
+    z-index: 10;
+    width: 60%;
+    position: absolute;
+    right: 20%;
+    top: 70%;
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .abc {
+        width: 72%;
+        right: 14%;
+    }
+}
+
+.ABC {
+    width: 77%;
+    height: 80px;
+    padding: 20px;
+    margin-right: 8%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    position: absolute;
+    top: 5%;
+}
+
+@media (max-width: 992px) {
+    .ABC {
+        font-size: 11px;
+        gap: 20px;
+        position: absolute;
+        left: 12%;
+    }
+}
+
+@media (max-width: 992px) {
+    .abc {
+        width: 72%;
+        right: 14%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1135px) {
+    .ABC {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 767px) {
+    .ABC {
+        font-size: 11px;
+        gap: 0px;
+        height: 20%;
+        width: 90%;
+        margin-left: -23px;
+    }
+}
+
+.ABC span {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ABC span:hover {
+    background-color: #0EA5E9;
+    color: white;
+}
+
+/* End Cs50 */
+/* ====================================== */
+/* Start Tracks */
+.btn-main {
+    background-color: #0EA5E9;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background-color: #0284C7;
+}
+
+/* شبكة المسارات */
+.section-title {
+    text-align: center;
+    margin: 60px 0 30px;
+    color: white;
+}
+
+.tracks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-bottom: 80px;
+}
+
+.track-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    border: 1px solid #F3F4F6;
+    transition: all 0.3s ease;
+}
+
+.track-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    border-color: #FDA4AF;
+}
+
+.track-img img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.btn-track {
+    background-color: #FB923C;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-track:hover {
+    background-color: #F97316;
+}
+
+.Tracks {
+    color: #111827;
+}
+
+/* End Tracks */
+
+/* Start Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #10cab7;
+}
+
+/* End Footer */

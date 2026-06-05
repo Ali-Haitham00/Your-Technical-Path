@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> مسار تطوير الخوادم (Back-End)</title>
+    <link rel="stylesheet" href="../CSS/back.css">
+    <link rel="stylesheet" href="../CSS/title.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- ==================Start-Logo Download================== -->
+
+    <div id="preloader">
+        <div class="loader-wrapper">
+            <div class="logo-container">
+                <div class="masarak-logo">
+                    <span class="text-main">مسارك</span>
+                    <span class="text-sub">التقني</span>
+                    <div class="tech-arrow"></div>
+                </div>
+            </div>
+            <div class="loading-text">جاري تحضير مسارك التقني...</div>
+        </div>
+    </div>
+    <!-- ==================End-Logo Download================== -->
+    <!-- ===================Scroll======================== -->
+    <button id="scrollTopBtn">⬆</button>
+    <!-- ===================Scroll======================== -->
+    <!-- Start Header -->
+    <header class="navbar" id="Navbar">
+        <div class="nav-container">
+
+            <!-- لوجو + Toggle -->
+            <div class="logo" id="themeToggle">
+
+                <i id="logoImg" class="fa-solid fa-code"></i>
+                <h3>مسارك التقني</h3>
+                <span id="modeIcon">🌙</span>
+            </div>
+
+            <!-- زرار الموبايل -->
+
+
+            <div class="category_nav" id="menuToggle">
+                <div onclick=Open_Categ_List() class="category_btn">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>Browse Category</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="category_nav_list" id="navLinks">
+
+                    <a href="#لغات البرمجة">لغات البرمجة</a>
+                    <a href="#حدد مسارك البرمجي">حدد مسارك البرمجي</a>
+                    <a href="#تطبيق مشاريع">تطبيق مشاريع</a>
+                    <a href="#خرائط التعلم">خرائط التعلم</a>
+                    <a href="#تحديات برمجية">تحديات برمجية</a>
+                    <a href="#أسئلة المقابلات التقنية">أسئلة المقابلات التقنية</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- اللينكات -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html#لغات البرمجة">لغات البرمجة</a></li>
+            <li><a href="../index.html#حدد مسارك البرمجي">حدد مسارك البرمجي</a></li>
+            <li><a href="../index.html#تطبيق مشاريع">تطبيق مشاريع</a></li>
+            <li><a href="../index.html#خرائط التعلم">خرائط التعلم</a></li>
+            <li><a href="../index.html#تحديات برمجية">تحديات برمجية</a></li>
+            <li><a href="../index.html#أسئلة المقابلات التقنية">أسئلة المقابلات التقنية</a></li>
+        </ul>
+    </header>
+
+
+    <!-- End Header -->
+    <!-- Start Hero -->
+    <div class="first">
+        <div class="image">
+            <div class="floating-bg-container" id="floatingBg">
+            </div>
+            <div class="text">
+
+                <h1>مسار تطوير الخوادم (Back-End)</h1>
+                <p>تعلم بناء واجهات المواقع من الصفر إلى الإحتراف</p>
+                <ul>
+                    <li>Ruby (Ruby on Rails)</li>
+                    <li>C# (ASP.NET)</li>
+                    <li>Node.js</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Hero -->
+    <!-- Start waves-container -->
+    <div class="waves-container">
+
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s
+                58 18 88 18 58-18 88-18
+                58 18 88 18v44h-352z">
+                </path>
+            </defs>
+
+            <g class="parallax">
+
+                <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,.25)" />
+
+                <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,.4)" />
+
+                <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,.6)" />
+
+                <use href="#gentle-wave" x="48" y="7" fill="var(--bg)" />
+
+            </g>
+
+        </svg>
+
+    </div>
+    <!-- End waves-container -->
+    <!-- Start Cs50 -->
+    <main class="Container-Tracks">
+        <!-- ==================================================Start Cs50 ====================================================================== -->
+
+        <div class="abc">
+            <div class="ABC">
+                <span class="tab active" data-content="one">المرحلة الأولى</span>
+                <span class="tab" data-content="two">المرحلة الثانية</span>
+                <span class="tab" data-content="three"> المرحلة الثالثة</span>
+            </div>
+        </div>
+
+
+        <div class="box active" id="one">
+            <!-- <h2 class="section-title">المرحلة الثانية في مسار Front End</h2> -->
+            <div class="content">
+
+                <!-- ================== Start Basics-hr======================== -->
+                <div class="fancy-divider">
+                    <h2 class="section-title"> اللغات</h2>
+                </div>
+                <!-- ================== End Basics-hr========================= -->
+                <!-- One Start Tracks -->
+                <div class="tracks-grid">
+                    <!-- ================================ONE===================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/Python.jpeg" alt="Python">
+                        </div>
+                        <h4 class="Tracks ">كورس Python</h4>
+                        <P class="Tracks ">لغة برمجة سهلة وقوية تُستخدم في تطوير الويب والذكاء الاصطناعي وتحليل
+                            البيانات.</P>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAyE_gei5d18qkfIe-Z8mocs&si=DFbb2X0KN3F2W6HJ"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================TWO================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/Node.js.jpeg" alt="Node.js">
+                        </div>
+                        <h4 class="Tracks ">كورس Node.js</h4>
+                        <P class="Tracks ">بيئة تشغيل JavaScript تُستخدم لبناء تطبيقات ويب سريعة وقابلة للتوسع.</P>
+                        <a href="https://youtube.com/playlist?list=PLQtNtS-WfRa8OF9juY3k6WUWayMfDKHK2&si=bLjn34LreDFc-4lq"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================THREE================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/Ruby.jpeg" alt="Ruby">
+                        </div>
+                        <h4 class="Tracks ">كورس JavaScript</h4>
+                        <P class="Tracks ">لغة وإطار عمل يساعدان على تطوير تطبيقات الويب بسرعة وكفاءة.</P>
+                        <a href="https://youtube.com/playlist?list=PLMYF6NkLrdN_AvYsR6G6wTQM1zHlY77f2&si=rm1gMW3LEeR5M8Ev"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- ================================ONE===================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/java2.jpeg" alt="Java">
+                        </div>
+                        <h4 class="Tracks ">كورس Java</h4>
+                        <P class="Tracks ">لغة برمجة قوية تُستخدم في تطوير تطبيقات الويب والهواتف والأنظمة المختلفة.</P>
+                        <a href="https://youtube.com/playlist?list=PL1DUmTEdeA6K7rdxKiWJq6JIxTvHalY8f&si=T-GWseqg4aT6HIF_"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================TWO================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/ss.jpeg" alt="C# (ASP.NET)">
+                        </div>
+                        <h4 class="Tracks ">كورس C# (ASP.NET)</h4>
+                        <P class="Tracks ">لغة وإطار عمل من مايكروسوفت لتطوير تطبيقات الويب والبرامج الحديثة.</P>
+                        <a href="https://youtube.com/playlist?list=PLqPejUavRNTWqGYP-f1pHkbLYdbqi_Uhg&si=ndeCWCTYcmO9qZYD"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================THREE================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/PHP2.jpeg" alt="PHP">
+                        </div>
+                        <h4 class="Tracks ">كورس PHP</h4>
+                        <P class="Tracks ">لغة برمجة شائعة تُستخدم لإنشاء المواقع والتطبيقات الديناميكية.</P>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAy41u35AqJUrI-H83DObUDq&si=qliClP_MKaMS6_nf"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- One End Tracks -->
+
+        <!-- Two Start Tracks -->
+
+        <div class="box" id="two">
+            <!-- <h2 class="section-title">المرحلة الثانية في مسار Front End</h2> -->
+            <!-- ================== Start UI/Styling-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title"> المكتبات</h2>
+            </div>
+            <!-- ================== End UI/Styling-hr========================= -->
+            <div class="tracks-grid">
+
+                <!-- ================================ONE===================================== -->
+
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Express.js.jpeg" alt="Express.js">
+                    </div>
+                    <h4 class="Tracks ">كورس Express.js</h4>
+                    <P class="Tracks ">إطار عمل لـ Node.js يُستخدم لبناء واجهات برمجة التطبيقات (APIs) وتطبيقات الويب
+                        بسهولة وسرعة.</P>
+                    <a href="https://youtube.com/playlist?list=PLfDx4cQoUNOZd0O-lHBZxWJCaIfPMI-UH&si=kFJ0k1bEu6Gr0sKi"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Django.jpeg" alt="Django">
+                    </div>
+                    <h4 class="Tracks ">كورس Django</h4>
+                    <P class="Tracks ">إطار عمل خفيف لـ Python يساعد على تطوير مواقع وتطبيقات ويب متكاملة وآمنة بسرعة.
+                    </P>
+                    <a href="https://youtube.com/playlist?list=PLknwEmKsW8OtK_n48UOuYGxJPbSFrICxm&si=znd-J0_MDzuI4dbB"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Flask.jpeg" alt="Flask">
+                    </div>
+                    <h4 class="Tracks ">كورس Flask</h4>
+                    <P class="Tracks ">إطار عمل خفيف لـ Python يُستخدم لإنشاء تطبيقات الويب وواجهات الـ API بمرونة.</P>
+                    <a href="https://youtube.com/playlist?list=PL6X8IkNltYY_MgJNuEX-S1OABlAGOVUUw&si=HA-sVu047EUQweYM"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================ONE===================================== -->
+
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/FastAPI.jpeg" alt="FastAPI">
+                    </div>
+                    <h4 class="Tracks ">كورس FastAPI</h4>
+                    <P class="Tracks ">إطار عمل حديث لـ Python لبناء APIs سريعة وعالية الأداء.</P>
+                    <a href="https://youtube.com/playlist?list=PLGbzY-VLUfcpzhB-iyGvju-NMMez_NNP9&si=ymAHW-enQo5Mdbe0"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Laravel.jpeg" alt="Laravel">
+                    </div>
+                    <h4 class="Tracks ">كورس Laravel</h4>
+                    <P class="Tracks ">إطار عمل لـ PHP يُسهّل تطوير تطبيقات الويب بطريقة منظمة واحترافية</P>
+                    <a href="https://youtube.com/playlist?list=PLdnrjoDUmGZ8Q9Dq9ebR9v1xEgqJ6tcfx&si=7B7SpMuPHZP2I-Y3"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Spring Boot.jpeg" alt="Spring Boot">
+                    </div>
+                    <h4 class="Tracks ">كورس Spring Boot</h4>
+                    <P class="Tracks ">إطار عمل لـ Java يُستخدم لبناء تطبيقات الويب والخدمات الخلفية (Backend) بسرعة
+                        وكفاءة.</P>
+                    <a href="https://youtube.com/playlist?list=PL8ZeRCFAAEvTCdCDoN4OSH84a_zyVGSh8&si=TQM42TuKp5UZcUmN"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Two End Tracks -->
+
+        <!-- Three Start Tracks -->
+        <div class="box" id="three">
+            <!-- <h2 class="section-title">التطبيق العملي</h2> -->
+            <!-- ================== Start Build Tools-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title">مشاريع باك إند</h2>
+            </div>
+            <!-- ================== End Build Tools-hr========================= -->
+            <div class="tracks-grid">
+                <!-- ================================ONE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/To Do List.png" alt="باك إند لبرنامج مهام يومية">
+                    </div>
+                    <h4 class="Tracks "> برنامج مهام يومية</h4>
+                    <P class="Tracks ">تطبيق مفتوح المصدر لتنظيم المهام اليومية</P>
+                    <a href="https://youtu.be/q88mEO-QY2g?si=c5uTKw-EVTAjK_49"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Login.png" alt="مشروع تسجيل الدخول">
+                    </div>
+                    <h4 class="Tracks "> مشروع تسجيل الدخول</h4>
+                    <P class="Tracks ">مشروع يُظهر كيفية Implement تسجيل الدخول في تطبيق ويب</P>
+                    <a href="https://youtu.be/laMhqQdiCGw?si=xRL8KVLPLhZTgwAu"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Full-Stack.png" alt="مشروع Full-Stack">
+                    </div>
+                    <h4 class="Tracks ">متجر إلكتروني</h4>
+                    <P class="Tracks ">مشروع يُظهر كيفية Implement متجر إلكتروني كامل باستخدام تقنيات حديثة</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAxuCSp2_-9LurPqRVwketnc&si=2r2ikd8YRGc5hC0q"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <!-- End Cs50 -->
+    <!-- =========================================================End Cs50 ================================================================== -->
+
+
+    <!-- End Tracks -->
+    <!-- Start Footer -->
+    <div class="footer"> 2026 &copy; Made With Love By <span> Ali Haitham</span> </div>
+    <!-- End Footer -->
+    <script src="../JS/back.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطوير الواجهات (Front-End)</title>
+    <link rel="stylesheet" href="../CSS/Front.css">
+    <link rel="stylesheet" href="../CSS/title.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- ==================Start-Logo Download================== -->
+
+    <div id="preloader">
+        <div class="loader-wrapper">
+            <div class="logo-container">
+                <div class="masarak-logo">
+                    <span class="text-main">مسارك</span>
+                    <span class="text-sub">التقني</span>
+                    <div class="tech-arrow"></div>
+                </div>
+            </div>
+            <div class="loading-text">جاري تحضير مسارك التقني...</div>
+        </div>
+    </div>
+    <!-- ==================End-Logo Download================== -->
+    <!-- ===================Scroll======================== -->
+    <button id="scrollTopBtn">⬆</button>
+    <!-- ===================Scroll======================== -->
+    <!-- Start Header -->
+    <header class="navbar" id="Navbar">
+        <div class="nav-container">
+
+            <!-- لوجو + Toggle -->
+            <div class="logo" id="themeToggle">
+
+                <i id="logoImg" class="fa-solid fa-code"></i>
+                <h3>مسارك التقني</h3>
+                <span id="modeIcon">🌙</span>
+            </div>
+
+            <!-- زرار الموبايل -->
+
+
+            <div class="category_nav" id="menuToggle">
+                <div onclick=Open_Categ_List() class="category_btn">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>Browse Category</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="category_nav_list" id="navLinks">
+
+                    <a href="#لغات البرمجة">لغات البرمجة</a>
+                    <a href="#حدد مسارك البرمجي">حدد مسارك البرمجي</a>
+                    <a href="#تطبيق مشاريع">تطبيق مشاريع</a>
+                    <a href="#خرائط التعلم">خرائط التعلم</a>
+                    <a href="#تحديات برمجية">تحديات برمجية</a>
+                    <a href="#أسئلة المقابلات التقنية">أسئلة المقابلات التقنية</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- اللينكات -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html#لغات البرمجة">لغات البرمجة</a></li>
+            <li><a href="../index.html#حدد مسارك البرمجي">حدد مسارك البرمجي</a></li>
+            <li><a href="../index.html#تطبيق مشاريع">تطبيق مشاريع</a></li>
+            <li><a href="../index.html#خرائط التعلم">خرائط التعلم</a></li>
+            <li><a href="../index.html#تحديات برمجية">تحديات برمجية</a></li>
+            <li><a href="../index.html#أسئلة المقابلات التقنية">أسئلة المقابلات التقنية</a></li>
+        </ul>
+    </header>
+
+
+    <!-- End Header -->
+    <!-- Start Hero -->
+    <div class="first">
+        <div class="image">
+            <div class="floating-bg-container" id="floatingBg">
+            </div>
+            <div class="text">
+
+                <h1>مسار تطوير الواجهات (Front-End)</h1>
+                <p>تعلم بناء واجهات المواقع من الصفر إلى الإحتراف</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Vue</li>
+                    <li>Angular</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End Hero -->
+
+    <!-- Start waves-container -->
+    <div class="waves-container">
+
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s
+                58 18 88 18 58-18 88-18
+                58 18 88 18v44h-352z">
+                </path>
+            </defs>
+
+            <g class="parallax">
+
+                <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,.25)" />
+
+                <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,.4)" />
+
+                <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,.6)" />
+
+                <use href="#gentle-wave" x="48" y="7" fill="var(--bg)" />
+
+            </g>
+
+        </svg>
+
+    </div>
+    <!-- End waves-container -->
+    <!-- Start Cs50 -->
+    <main class="Container-Tracks">
+        <!-- ==================================================Start Cs50 ====================================================================== -->
+
+        <div class="abc">
+            <div class="ABC">
+                <span class="tab active" data-content="one">المرحلة الأولى</span>
+                <span class="tab" data-content="two">المرحلة الثانية</span>
+                <span class="tab" data-content="three">بناء مشاريع</span>
+            </div>
+        </div>
+        <div class="box active" id="one">
+            <!-- <h2 class="section-title">المرحلة الثانية في مسار Front End</h2> -->
+            <div class="content">
+
+                <!-- ================== Start Basics-hr======================== -->
+                <div class="fancy-divider">
+                    <h2 class="section-title"> الأساسيات</h2>
+                </div>
+                <!-- ================== End Basics-hr========================= -->
+                <!-- One Start Tracks -->
+                <div class="tracks-grid">
+                    <!-- ================================ONE===================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/HTML.jpeg" alt="HTML">
+                        </div>
+                        <h4 class="Tracks ">كورس HTML</h4>
+                        <P class="Tracks ">تعلم لغة الهيكلة الأساسية التي لا يكتمل أي موقع بدونها.</P>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAw_t_XWUFbBX-c9MafPk9ji&si=ekkht2NAyEvRKrpz"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================TWO================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/CSS.jpeg" alt="CSS">
+                        </div>
+                        <h4 class="Tracks ">كورس CSS</h4>
+                        <P class="Tracks ">تعلم كيف تحول الأكواد الجامدة إلى تصميمات عصرية ومبهرة.</P>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAzjsz06gkzlSrlev53MGIKe&si=hbR1saF4NXlvmf1Y"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================THREE================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/JS.jpeg" alt="JavaScript">
+                        </div>
+                        <h4 class="Tracks ">كورس JavaScript</h4>
+                        <P class="Tracks ">أضف التفاعل والذكاء لموقعك وانتقل من مجرد مصمم إلى مطور محترف.</P>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAx3kiplQR_oeDqLDBUDYwVv&si=iBDdPuUOlDPKywF9"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================FOUR================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/TS.jpg" alt="TypeScript">
+                        </div>
+                        <h4 class="Tracks ">كورس TypeScript</h4>
+                        <P class="Tracks ">تعلم كيفية استخدام TypeScript لتطوير تطبيقات ويب أكثر أماناً وقابلة للصيانة.
+                        </P>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAy532K9M_fjiAmrJ0gkCyLJ&si=D3ilcC8RzhWpNfyw"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!-- One End Tracks -->
+            <!-- ================== Start Frameworks-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title"> المكتبات</h2>
+            </div>
+            <!-- ================== End Frameworks-hr========================= -->
+            <!-- One Start Tracks -->
+            <div class="tracks-grid">
+                <!-- ================================ONE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/React.jpeg" alt="React">
+                    </div>
+                    <h4 class="Tracks ">كورس React</h4>
+                    <P class="Tracks ">تعلم كيفية بناء تطبيقات ويب تفاعلية باستخدام مكتبة React.</P>
+                    <a href="https://youtube.com/playlist?list=PLYyqC4bNbCIdSZ-JayMLl4WO2Cr995vyS&si=iKQtFIlestCidvft"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================TWO================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Vue.jpeg" alt="Vue">
+                    </div>
+                    <h4 class="Tracks ">كورس Vue</h4>
+                    <P class="Tracks ">تعلم كيفية بناء تطبيقات ويب تفاعلية باستخدام مكتبة Vue.</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAxr5AqK3Yz4DWYKVSmIFziw&si=W3izvlGNZCEd-7HE"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================THREE================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Angular.jpeg" alt="Angular">
+                    </div>
+                    <h4 class="Tracks ">كورس Angular</h4>
+                    <P class="Tracks ">تعلم كيفية بناء تطبيقات ويب تفاعلية باستخدام مكتبة Angular.</P>
+                    <a href="https://youtube.com/playlist?list=PLkzso0fG0dbCIot9jtVReV-126k6fd6tu&si=4r-ud7aSYZq0R4ZL"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================FOUR================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Next.jpg" alt="Next.js">
+                    </div>
+                    <h4 class="Tracks ">كورس Next.js</h4>
+                    <P class="Tracks ">تعلم كيفية بناء تطبيقات ويب تفاعلية باستخدام مكتبة Next.js.</P>
+                    <a href="https://youtube.com/playlist?list=PLuqzHerFBD5Bw9QwzoTufiMAM0npEcnoX&si=_QBZ-Qx5wHwOZbS3"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- One End Tracks -->
+
+        <!-- Two Start Tracks -->
+
+        <div class="box" id="two">
+            <!-- <h2 class="section-title">المرحلة الثانية في مسار Front End</h2> -->
+            <!-- ================== Start UI/Styling-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title"> تصميم واجهة المستخدم</h2>
+            </div>
+            <!-- ================== End UI/Styling-hr========================= -->
+            <div class="tracks-grid">
+
+                <!-- ================================ONE===================================== -->
+
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/BS.jpg" alt="Bootstrap">
+                    </div>
+                    <h4 class="Tracks ">كورس Bootstrap</h4>
+                    <P class="Tracks ">تعلم كيفية بناء تطبيقات ويب تفاعلية باستخدام مكتبة Bootstrap.</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAyvm7f--dc6XqkpfDcen_vQ&si=ZOJtDRtGIlEteKcq"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/TW.jpg" alt="Tailwind CSS">
+                    </div>
+                    <h4 class="Tracks ">كورس Tailwind CSS</h4>
+                    <P class="Tracks ">تعلم كيفية بناء تطبيقات ويب تفاعلية باستخدام مكتبة Tailwind CSS.</P>
+                    <a href="https://youtube.com/playlist?list=PLdnrjoDUmGZ8Q9Dq9ebR9v1xEgqJ6tcfx&si=7B7SpMuPHZP2I-Y3"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/MUI.jpg" alt="Material UI">
+                    </div>
+                    <h4 class="Tracks ">كورس Material UI</h4>
+                    <P class="Tracks ">تعلم كيفية بناء تطبيقات ويب تفاعلية باستخدام مكتبة Material UI.</P>
+                    <a href="https://youtube.com/playlist?list=PLeWmXrh00478Ff4WxmE4PJuu9bzfyvcjH&si=yBJJplar6-fB9fYb"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ================== Start Build Tools-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title">أدوات البناء</h2>
+            </div>
+            <!-- ================== End Build Tools-hr========================= -->
+            <div class="tracks-grid">
+
+                <!-- ================================ONE===================================== -->
+
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/WP.jpg" alt="Webpack">
+                    </div>
+                    <h4 class="Tracks ">كورس Webpack</h4>
+                    <P class="Tracks ">Webpack أداة لتجميع وإدارة ملفات المشروع وتحسينها قبل النشر.</P>
+                    <a href="https://youtu.be/lziuNMk_8eQ?si=5JNY-bXXpum6ZNpd" target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/Vite.jpg" alt="Vite">
+                    </div>
+                    <h4 class="Tracks ">كورس Vite</h4>
+                    <P class="Tracks ">Vite أداة تطوير وبناء مشاريع الويب تتميز بالسرعة وسهولة الاستخدام.</P>
+                    <a href="https://youtu.be/89NJdbYTgJ8?si=YWMIBlAUsF7V5cn2" target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Two End Tracks -->
+
+        <!-- Three Start Tracks -->
+        <div class="box" id="three">
+            <!-- <h2 class="section-title">التطبيق العملي</h2> -->
+            <!-- ================== Start Build Tools-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title">HTML and CSS</h2>
+            </div>
+            <!-- ================== End Build Tools-hr========================= -->
+            <div class="tracks-grid">
+                <!-- ================================ONE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/HTML+CSS.jpeg" alt="HTML + CSS">
+                    </div>
+                    <h4 class="Tracks ">المشروع الأول</h4>
+                    <P class="Tracks ">موقع بسيط لتطبيق مفاهيم HTML + CSS</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAzHSjcR-HnW9tnxyuye8KbF&si=lABA71CKfezZ-OBn"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/HTML+CSS.jpeg" alt="HTML + CSS">
+                    </div>
+                    <h4 class="Tracks ">المشروع الثاني</h4>
+                    <P class="Tracks ">موقع بسيط لتطبيق بعض المفاهيم المتقدمة</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAy1l-2A21ng3gxEyocruT0t&si=DciY9Z-WWjK5kliP"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/HTML+CSS.jpeg" alt="HTML + CSS">
+                    </div>
+                    <h4 class="Tracks ">المشروع الثالث</h4>
+                    <P class="Tracks ">موقع بسيط لتطبيق مفاهيم أكثر تطورا في HTML + CSS</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAxuCSp2_-9LurPqRVwketnc&si=2r2ikd8YRGc5hC0q"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+            </div>
+            <!-- ================== Start Build Tools-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title">HTML and CSS and JavaScript</h2>
+            </div>
+            <!-- ================== End Build Tools-hr========================= -->
+            <div class="tracks-grid">
+                <!-- ================================ONE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/HTML + CSS + JS.jpeg" alt="JavaScript">
+                    </div>
+                    <h4 class="Tracks ">لعبة تخمين الكلمات</h4>
+                    <P class="Tracks ">تصميم لعبة بسيطة لتطبيق مفاهيم JavaScript</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAzI6F4b0MwiQgCjw8lsceMd&si=3ZF1m9XNuPcSqze_"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/HTML + CSS + JS.jpeg" alt="JavaScript">
+                    </div>
+                    <h4 class="Tracks ">لعبة الذاكرة</h4>
+                    <P class="Tracks ">تصميم لعبة بسيطة لتطبيق مفاهيم مهمة جدا في JavaScript</P>
+                    <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAzSymugTQZDuEOG5I64uhyU&si=fCgvGP3iEfmdvzWB"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/HTML + CSS + JS.jpeg" alt="JavaScript">
+                    </div>
+                    <h4 class="Tracks ">مشاريع فرونت إند</h4>
+                    <P class="Tracks ">بعض المشاريع الأخرى لتمكن من JavaScript</P>
+                    <a href="https://youtube.com/playlist?list=PLknwEmKsW8Otkp3ax3DWDWQufKy4RirWO&si=PbWDI9e1oARkbY34"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+            </div>
+            <!-- ================== Start Build Tools-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title">مشاريع React </h2>
+            </div>
+            <!-- ================== End Build Tools-hr========================= -->
+            <div class="tracks-grid">
+                <!-- ================================ONE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/React.jpg" alt="React">
+                    </div>
+                    <h4 class="Tracks "> تصميم موقع طبي</h4>
+                    <P class="Tracks ">مشروع بسيط جدا لتطبيق المفاهيم البدائية في React</P>
+                    <a href="https://youtube.com/playlist?list=PLU5AV7Xyduw19ga6e4BlBBAloFTsa9pcS&si=t-nMKIoJbPlMm43K"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/React.jpg" alt="React">
+                    </div>
+                    <h4 class="Tracks ">تصميم موقع شخصي</h4>
+                    <P class="Tracks ">صمم موقعى إلكتروني كامل خاص بك بيReact </P>
+                    <a href="https://youtu.be/bv_IJ3N6y8U?si=ToLUJueYaSWv5vX9" target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/React.jpg" alt="React">
+                    </div>
+                    <h4 class="Tracks ">المشروع الثالث</h4>
+                    <P class="Tracks ">مشروع متطور في React والتعلم طريقة التعامل مع الباك إند</P>
+                    <a href="https://youtu.be/niCKHolE60s?si=b_sTme2LtkezIbFB" target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Cs50 -->
+    <!-- =========================================================End Cs50 ================================================================== -->
+
+
+    <!-- End Tracks -->
+    <!-- Start Footer -->
+    <div class="footer"> 2026 &copy; Made With Love By <span> Ali Haitham</span> </div>
+    <!-- End Footer -->
+    <script src="../JS/Front.js"></script>
+</body>
+
+</html>

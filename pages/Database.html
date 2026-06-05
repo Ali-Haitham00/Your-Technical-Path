@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسار | قواعد البيانات </title>
+    <link rel="stylesheet" href="../CSS/Database.css">
+    <link rel="stylesheet" href="../CSS/title.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- ==================Start-Logo Download================== -->
+
+    <div id="preloader">
+        <div class="loader-wrapper">
+            <div class="logo-container">
+                <div class="masarak-logo">
+                    <span class="text-main">مسارك</span>
+                    <span class="text-sub">التقني</span>
+                    <div class="tech-arrow"></div>
+                </div>
+            </div>
+            <div class="loading-text">جاري تحضير مسارك التقني...</div>
+        </div>
+    </div>
+    <!-- ==================End-Logo Download================== -->
+    <!-- ===================Scroll======================== -->
+    <button id="scrollTopBtn">⬆</button>
+    <!-- ===================Scroll======================== -->
+    <!-- Start Header -->
+    <header class="navbar" id="Navbar">
+        <div class="nav-container">
+
+            <!-- لوجو + Toggle -->
+            <div class="logo" id="themeToggle">
+
+                <i id="logoImg" class="fa-solid fa-code"></i>
+                <h3>مسارك التقني</h3>
+                <span id="modeIcon">🌙</span>
+            </div>
+
+            <!-- زرار الموبايل -->
+
+
+            <div class="category_nav" id="menuToggle">
+                <div onclick=Open_Categ_List() class="category_btn">
+                    <i class="fa-solid fa-bars"></i>
+                    <p>Browse Category</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <div class="category_nav_list" id="navLinks">
+
+                    <a href="#لغات البرمجة">لغات البرمجة</a>
+                    <a href="#حدد مسارك البرمجي">حدد مسارك البرمجي</a>
+                    <a href="#تطبيق مشاريع">تطبيق مشاريع</a>
+                    <a href="#خرائط التعلم">خرائط التعلم</a>
+                    <a href="#تحديات برمجية">تحديات برمجية</a>
+                    <a href="#أسئلة المقابلات التقنية">أسئلة المقابلات التقنية</a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- اللينكات -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../index.html#لغات البرمجة">لغات البرمجة</a></li>
+            <li><a href="../index.html#حدد مسارك البرمجي">حدد مسارك البرمجي</a></li>
+            <li><a href="../index.html#تطبيق مشاريع">تطبيق مشاريع</a></li>
+            <li><a href="../index.html#خرائط التعلم">خرائط التعلم</a></li>
+            <li><a href="../index.html#تحديات برمجية">تحديات برمجية</a></li>
+            <li><a href="../index.html#أسئلة المقابلات التقنية">أسئلة المقابلات التقنية</a></li>
+        </ul>
+    </header>
+
+
+    <!-- End Header -->
+    <!-- Start Hero -->
+    <div class="first">
+        <div class="image">
+            <div class="floating-bg-container" id="floatingBg">
+            </div>
+            <div class="text">
+
+                <h1>مسار قواعد البيانات</h1>
+                <p>تعلم تصميم وتطوير قواعد البيانات من الصفر إلى الإحتراف</p>
+                <ul>
+                    <li>PostgreSQL</li>
+                    <li>SQL Server</li>
+                    <li>MongoDB</li>
+                    <li>MariaDB</li>
+                    <li>MySQL</li>
+                    <li>SQLite</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- End Hero -->
+
+    <!-- Start waves-container -->
+    <div class="waves-container">
+
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none">
+
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s
+                58 18 88 18 58-18 88-18
+                58 18 88 18v44h-352z">
+                </path>
+            </defs>
+
+            <g class="parallax">
+
+                <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,.25)" />
+
+                <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,.4)" />
+
+                <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,.6)" />
+
+                <use href="#gentle-wave" x="48" y="7" fill="var(--bg)" />
+
+            </g>
+
+        </svg>
+
+    </div>
+    <!-- End waves-container -->
+    <!-- Start Cs50 -->
+    <main class="Container-Tracks">
+        <!-- ==================================================Start Cs50 ====================================================================== -->
+
+        <div class="abc">
+            <div class="ABC">
+                <span class="tab active" data-content="one">المرحلة الأولى</span>
+                <span class="tab" data-content="two">المرحلة الثانية</span>
+                <span class="tab" data-content="three">بناء مشاريع</span>
+            </div>
+        </div>
+        <div class="box active" id="one">
+            <div class="content">
+
+                <!-- ================== Start RDBMS-hr======================== -->
+                <div class="fancy-divider">
+                    <h2 class="section-title"> نظام إدارة قواعد البيانات العلائقية</h2>
+                </div>
+                <!-- ================== End RDBMS-hr========================= -->
+                <!-- One Start Tracks -->
+                <div class="tracks-grid">
+                    <!-- ================================ONE===================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/img-Databases/MySQL.jpg" alt="MySQL">
+                        </div>
+                        <h4 class="Tracks ">كورس MySQL</h4>
+                        <P class="Tracks ">قاعدة بيانات شائعة وسهلة الاستخدام في الويب والتطبيقات الصغيرة والمتوسطة..
+                        </P>
+                        <a href="https://youtube.com/playlist?list=PLDoPjvoNmBAz6DT8SzQ1CODJTH-NIA7R9&si=02rKuu-jFbq4w8Ch"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================TWO================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/img-Databases/PostegreSQL.jpg" alt="PostgreSQL">
+                        </div>
+                        <h4 class="Tracks ">كورس PostgreSQL</h4>
+                        <P class="Tracks ">قاعدة بيانات قوية جدًا وبتدعم مميزات متقدمة وتحليل بيانات معقدة.</P>
+                        <a href="https://youtube.com/playlist?list=PLhiFu-f80eo_90Mx37BzcIl9UJCNfEdQ_&si=wKplImMMhqoXR0Bk"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <!-- =====================================THREE================================== -->
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/img-Databases/MariaDB.jpg" alt="MariaDB">
+                        </div>
+                        <h4 class="Tracks ">كورس MariaDB</h4>
+                        <P class="Tracks ">نسخة مطورة من MySQL بميزات إضافية وأداء أفضل في بعض الحالات.</P>
+                        <a href="https://youtube.com/playlist?list=PL3bGLnkkGnuUOB9YjjVDty6aCJApvkw8O&si=U_Xvx1oSpI6DXOw0"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                    <div class="track-card">
+                        <div class="track-img">
+                            <img src="../assets/image/img-Databases/SQL Server.jpg" alt="SQL Server">
+                        </div>
+                        <h4 class="Tracks ">كورس SQL Server</h4>
+                        <P class="Tracks ">نظام قوي من مايكروسوفت يستخدم في الشركات الكبيرة.</P>
+                        <a href="https://youtube.com/playlist?list=PLqPejUavRNTUTYamHD0n654J-w8vA1u-5&si=e-xQDu2n-jPxT0Up"
+                            target="_blank">
+                            <button class="btn-track"> مشاهدة الكورس</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ================== Start RDBMS-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title">إختر اللغة التي تريد تعلم SQLite بها</h2>
+            </div>
+            <!-- ================== End RDBMS-hr========================= -->
+            <div class="tracks-grid">
+                <!-- =====================================FOUR================================== -->
+
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/SQLite.jpg" alt="SQLite">
+                    </div>
+                    <h4 class="Tracks ">كورس SQLite & Flutter</h4>
+                    <P class="Tracks ">قاعدة بيانات خفيفة جدًا تشتغل داخل التطبيق نفسه بدون سيرفر.</P>
+                    <a href="https://youtube.com/playlist?list=PLhiFu-f80eo_F6XP_TkmRSCndHpPrULGk&si=Ih7hVv5b7UfeU82k"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/SQLite.jpg" alt="SQLite">
+                    </div>
+                    <h4 class="Tracks ">كورس SQLite & C</h4>
+                    <P class="Tracks ">قاعدة بيانات خفيفة جدًا تشتغل داخل التطبيق نفسه بدون سيرفر.</P>
+                    <a href="https://youtube.com/playlist?list=PLhiFu-f80eo97_vNXYHChCfG3uIS3A2Em&si=HBHYAnMGIusa7d4K"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/SQLite.jpg" alt="SQLite">
+                    </div>
+                    <h4 class="Tracks ">كورس SQLite & Python</h4>
+                    <P class="Tracks ">قاعدة بيانات خفيفة جدًا تشتغل داخل التطبيق نفسه بدون سيرفر.</P>
+                    <a href="https://youtube.com/playlist?list=PLknwEmKsW8OveN7SrZN5QjwyXLBzUDkJB&si=GPafet_627_OeCC4"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+            </div>
+            <!-- ================== Start NoSQL-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title"> قواعد بيانات غير علائقية</h2>
+            </div>
+            <!-- ================== End NoSQL-hr========================= -->
+            <!-- One Start Tracks -->
+            <div class="tracks-grid">
+                <!-- ================================ONE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/mongodB.jpg" alt="MongoDB">
+                    </div>
+                    <h4 class="Tracks ">كورس MongoDB</h4>
+                    <P class="Tracks ">بتخزن البيانات على شكل JSON-like documents ومرنة جدًا.</P>
+                    <a href="https://youtube.com/playlist?list=PLqPejUavRNTUTYamHD0n654J-w8vA1u-5&si=e-xQDu2n-jPxT0Up"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================TWO================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Cassandra.jpg" alt="Cassandra">
+                    </div>
+                    <h4 class="Tracks ">كورس Cassandra</h4>
+                    <P class="Tracks ">قوية في التعامل مع البيانات الضخمة والتوزيع على سيرفرات متعددة.</P>
+                    <a href="https://youtube.com/playlist?list=PLalrWAGybpB-L1PGA-NfFu2uiWHEsdscD&si=r6NDK2E2tpq4iFOo"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================THREE================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/CouchDB.jpg" alt="CouchDB">
+                    </div>
+                    <h4 class="Tracks ">كورس CouchDB</h4>
+                    <P class="Tracks ">تعلم كيفية استخدام قاعدة بيانات CouchDB في تطبيقاتك.</P>
+                    <a href="https://youtube.com/playlist?list=PL8HF3xNad8ysxwy6o-1of67M2s76jsBdQ&si=JHoVZMkX-Do1iJSW"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================FOUR================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Firebase.jpg" alt="Firebase">
+                    </div>
+                    <h4 class="Tracks ">كورس Firebase</h4>
+                    <P class="Tracks ">منصة من جوجل فيها قاعدة بيانات لحظية وخدمات Backend جاهزة</P>
+                    <a href="https://youtube.com/playlist?list=PLb6ZzJ93PVwpsrq-WMPzdHzoI5BXfMoIj&si=UCb0yyPO1KlHmeNb"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- =====================================Five================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Supabase.jpg" alt="Supabase">
+                    </div>
+                    <h4 class="Tracks ">كورس Supabase</h4>
+                    <P class="Tracks ">بديل مفتوح المصدر لـ Firebase ويعتمد على PostgreSQL.</P>
+                    <a href="https://youtube.com/playlist?list=PL_g7JqE7CSIXGrwotQ_5B-dIPdQocHDg7&si=1qWIx_gGEWoox9Pe"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <!-- One End Tracks -->
+
+        <!-- Two Start Tracks -->
+
+        <div class="box" id="two">
+           
+            <!-- ================== Start Graph Databases-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title"> Graph Databases </h2>
+            </div>
+            <!-- ================== End Graph Databases-hr========================= -->
+            <div class="tracks-grid">
+
+                <!-- ================================ONE===================================== -->
+
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Neo4j.jpg" alt="Neo4j">
+                    </div>
+                    <h4 class="Tracks ">كورس Neo4j</h4>
+                    <P class="Tracks ">أشهر قاعدة بيانات رسومية لتحليل العلاقات المعقدة.</P>
+                    <a href="https://youtu.be/8jNPelugC2s?si=sjWaELUR1Ez3cl5s" target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/ArangoDB.jpg" alt="ArangoDB">
+                    </div>
+                    <h4 class="Tracks ">كورس ArangoDB</h4>
+                    <P class="Tracks ">قاعدة متعددة النماذج تدعم Graph + Document + Key-Value.</P>
+                    <a href="https://youtube.com/playlist?list=PLaaJbsZsxFu5F3Kx2CdiDADAJ5wxxzQb7&si=LNoLtHkieb8CaTET"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+            </div>
+            <!-- ================== Start Message Queues-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title"> قوائم إنتظار الرسائل</h2>
+            </div>
+            <!-- ================== End Message Queues-hr========================= -->
+            <div class="tracks-grid">
+
+                <!-- ================================ONE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Apache Kafka.jpg" alt="Apache Kafka">
+                    </div>
+                    <h4 class="Tracks ">كورس Apache Kafka</h4>
+                    <P class="Tracks ">نظام قوي لمعالجة البيانات اللحظية والتدفق الكبير من الأحداث.</P>
+                    <a href="https://youtube.com/playlist?list=PLt1SIbA8guusxiHz9bveV-UHs_biWFegU&si=ULp90fjHoMsMiaF9"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/RabbitMQ.jpg" alt="RabbitMQ">
+                    </div>
+                    <h4 class="Tracks ">كورس RabbitMQ</h4>
+                    <P class="Tracks ">وسيط رسائل شائع لتنظيم التواصل بين الخدمات.</P>
+                    <a href="https://youtube.com/playlist?list=PLalrWAGybpB-UHbRDhFsBgXJM1g6T4IvO&si=JOMWI0lzRxbo-dI5"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Amazon SQS.png" alt="Amazon SQS">
+                    </div>
+                    <h4 class="Tracks ">كورس Amazon SQS</h4>
+                    <P class="Tracks ">خدمة من أمازون لإدارة الرسائل في السحابة بسهولة.</P>
+                    <a href="https://youtu.be/CyYZ3adwboc?si=DFsii4Y2ASid0gkR" target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+                <!-- ================================FOUR===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/ZeroMQ.png" alt="ZeroMQ">
+                    </div>
+                    <h4 class="Tracks ">كورس ZeroMQ</h4>
+                    <P class="Tracks ">مكتبة خفيفة وسريعة جدًا للاتصال بين الأنظمة.</P>
+                    <a href="https://youtu.be/UrwtQfSbrOs?si=cK7bs11ZoR9RWSS8" target="_blank">
+                        <button class="btn-track"> مشاهدة الكورس</button>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Two End Tracks -->
+
+        <!-- Three Start Tracks -->
+        <div class="box" id="three">
+            <!-- ================== Start Projects Appliction-hr======================== -->
+            <div class="fancy-divider">
+                <h2 class="section-title">مشاريع حقيقية لتطبيق ما تعلمته</h2>
+            </div>
+            <!-- ================== End Projects Appliction-hr========================= -->
+            <div class="tracks-grid">
+                <!-- ================================ONE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Proj-One.jpg" alt="Project One">
+                    </div>
+                    <h4 class="Tracks "> مشروع إدارة موظفين</h4>
+                    <P class="Tracks "></P>
+                    <a href="https://youtube.com/playlist?list=PLSiLeKadTQ7kOimFxpcrlcbKEAEeRZUac&si=DurNex2AdR41Fgx1"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================TWO===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Proj-Two.jpg" alt="Project Two">
+                    </div>
+                    <h4 class="Tracks ">مشروع إدارة الطلاب</h4>
+                    <P class="Tracks "></P>
+                    <a href="https://youtube.com/playlist?list=PLSiLeKadTQ7kB6O992zh6ZYgVHzEl6Mk2&si=RvkMguyRdn5TS5FF"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================THREE===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Proj-Three.jpg" alt="Project Three">
+                    </div>
+                    <h4 class="Tracks "> تصميم قواعد بيانات</h4>
+                    <P class="Tracks ">تطبيق عملي على ERD</P>
+                    <a href="https://youtu.be/vi7tbmzMceI?si=183tUClDZffqus0xq"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                 <!-- ================================Four===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Proj-Four.jpg" alt="Project Four">
+                    </div>
+                    <h4 class="Tracks "> تصميم قاعدة بيانات Excel على Access</h4>
+                    <P class="Tracks "></P>
+                    <a href="https://youtube.com/playlist?list=PLJATL9W61MQIircJpsPG6NtkhGFSMXMoU&si=rrNp1w0-175kslbB"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================Five===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Proj-Five.jpg" alt="Project Five">
+                    </div>
+                    <h4 class="Tracks "> تطبيق موبيل مع قاعدة بيانات</h4>
+                    <P class="Tracks "></P>
+                    <a href="https://youtu.be/-2_ApKTOTXc?si=pfBWmsaFVOlygS7O"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+                <!-- ================================Six===================================== -->
+                <div class="track-card">
+                    <div class="track-img">
+                        <img src="../assets/image/img-Databases/Proj-Six.jpg" alt="Project Six">
+                    </div>
+                    <h4 class="Tracks "> مشروع إدارة عيادة أسنان</h4>
+                    <P class="Tracks "></P>
+                    <a href="https://youtu.be/Jsl-eyF0ug0?si=QrRxVZOH7whg2E7Q"
+                        target="_blank">
+                        <button class="btn-track"> مشاهدة المشروع</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Cs50 -->
+    <!-- =========================================================End Cs50 ================================================================== -->
+
+
+    <!-- End Tracks -->
+    <!-- Start Footer -->
+    <div class="footer"> 2026 &copy; Made With Love By <span> Ali Haitham</span> </div>
+    <!-- End Footer -->
+    <script src="../JS/Database.js"></script>
+</body>
+
+</html>

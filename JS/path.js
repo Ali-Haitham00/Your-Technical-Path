@@ -45,8 +45,8 @@ function Open_Categ_List() {
 }
 
 // ======================
-const toggle = document.getElementById("themeToggle");
-const logoImg = document.getElementById("logoImg");
+// const toggle = document.getElementById("themeToggle");
+// const logoImg = document.getElementById("logoImg");
 const icon = document.getElementById("modeIcon");
 
 /* تحميل الثيم */
@@ -55,13 +55,13 @@ if (localStorage.getItem("theme") === "dark") {
 }
 
 /* تحديث اللوجو */
-function updateLogo() {
-    if (document.body.classList.contains("dark")) {
-        logoImg.src = "logo-dark.png";
-    } else {
-        logoImg.src = "logo-light.png";
-    }
-}
+// function updateLogo() {
+//     if (document.body.classList.contains("dark")) {
+//         logoImg.src = "logo-dark.png";
+//     } else {
+//         logoImg.src = "logo-light.png";
+//     }
+// }
 
 /* تحديث الأيقونة */
 function updateIcon() {
@@ -69,11 +69,11 @@ function updateIcon() {
 }
 
 /* تشغيل أول مرة */
-updateLogo();
+// updateLogo();
 updateIcon();
 
 /* toggle theme */
-toggle.addEventListener("click", () => {
+icon.addEventListener("click", () => {
     document.body.classList.toggle("dark");
 
     localStorage.setItem(
@@ -81,7 +81,7 @@ toggle.addEventListener("click", () => {
         document.body.classList.contains("dark") ? "dark" : "light"
     );
 
-    updateLogo();
+    // updateLogo();
     updateIcon();
 });
 
